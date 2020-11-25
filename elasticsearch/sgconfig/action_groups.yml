@@ -138,3 +138,9 @@ CLUSTER_COMPOSITE_OPS:
 MANAGE_SNAPSHOTS:
   - "cluster:admin/snapshot/*"
   - "cluster:admin/repository/*"
+
+CLUSTER_MANAGE_PIPELINES:
+  readonly: true
+  permissions:
+  - "cluster:admin/ingest/pipeline/*"
+  
